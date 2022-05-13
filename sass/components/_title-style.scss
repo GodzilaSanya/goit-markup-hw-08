@@ -19,11 +19,22 @@
 }
 
 .specifics {
-  @include font(700, 14px, 1.4);
+  @include font(700, 14px, 1.14);
   @extend %section-headlines;
   text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  @include tablet {
+    text-align: start;
+  }
+}
 
-  margin-bottom: 10px;
+.features__text {
+  @include font(400, 14px, 1.71);
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
 //------Team section
 .team__name {
