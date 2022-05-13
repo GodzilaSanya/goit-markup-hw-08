@@ -1,0 +1,48 @@
+// team section
+.nav-font-style {
+  @include font(500, 14px, 1.14);
+  letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+//--------------------------------
+.clients__title,
+.team__title,
+.work__title {
+  @include font(null, 36px, 1.17);
+  text-align: center;
+
+  color: var(--headlines-color);
+
+  margin-bottom: 50px;
+}
+
+.specifics {
+  @include font(700, 14px, 1.4);
+  @extend %section-headlines;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+//------Team section
+.team__name {
+  @include font(500, 16px, 1.18);
+  @extend %section-headlines;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.team__spec {
+  @include font(null, 16px, 1.18);
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+//--------Portfolio
+.portfolio__desc {
+  @include font(null, 16px, 1.88);
+
+  color: var(--second-text-color);
+}

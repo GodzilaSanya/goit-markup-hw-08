@@ -1,0 +1,20 @@
+.logo {
+  display: block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: $font-logo;
+  @include font(700, 26px, 1.19);
+
+  color: #000000;
+  &--blue {
+    color: var(--focus-color);
+  }
+  &--white {
+    color: var(--bg-color-main);
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-right: 0;
+  }
+}

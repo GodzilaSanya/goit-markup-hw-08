@@ -1,0 +1,14 @@
+body {
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  background-color: var(--bg-color-main);
+  color: var(--second-text-color);
+}
+
+.section-gap {
+  padding-top: var(--main-gap);
+  padding-bottom: var(--main-gap);
+}
