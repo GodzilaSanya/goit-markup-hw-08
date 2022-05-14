@@ -9,6 +9,10 @@ body {
 }
 
 .section-gap {
-  padding-top: var(--main-gap);
-  padding-bottom: var(--main-gap);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: var(--main-gap);
+    padding-bottom: var(--main-gap);
+  }
 }

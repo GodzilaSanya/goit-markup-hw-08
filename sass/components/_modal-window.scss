@@ -1,18 +1,28 @@
 .callback-modal {
   position: absolute;
-  width: 528px;
+
+  width: 95vw;
 
   padding: 40px;
 
+  top: 1.5%;
   left: 50%;
-  top: 50%;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include mobile {
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  @include desktop {
+    width: 528px;
+  }
 }
 
 .backdrop.is-hidden .callback-modal {
@@ -49,7 +59,7 @@
 .callback-modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -61,6 +71,10 @@
 .form-field {
   position: relative;
   margin-bottom: 10px;
+}
+
+.form-field--gap {
+  margin-bottom: 20px;
 }
 
 .callback-modal__label {

@@ -10,12 +10,11 @@
 .clients__title,
 .team__title,
 .work__title {
-  @include font(null, 36px, 1.17);
+  @include font(null, 28px, 1.18);
   text-align: center;
-
   color: var(--headlines-color);
 
-  margin-bottom: 50px;
+  // @include font(null, 36px, 1.17);
 }
 
 .specifics {
@@ -38,7 +37,7 @@
 }
 //------Team section
 .team__name {
-  @include font(500, 16px, 1.18);
+  @include font(500, 16px, 1.19);
   @extend %section-headlines;
   text-align: center;
 
@@ -56,4 +55,16 @@
   @include font(null, 16px, 1.88);
 
   color: var(--second-text-color);
+}
+
+// ---------MODAL------
+.callback-modal__license-text {
+  font-size: 12px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
