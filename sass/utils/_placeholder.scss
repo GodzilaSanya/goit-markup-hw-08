@@ -1,3 +1,11 @@
 %section-headlines {
   color: var(--headlines-color);
 }
+
+%title-position {
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
