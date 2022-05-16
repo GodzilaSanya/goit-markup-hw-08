@@ -45,7 +45,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -138,6 +138,23 @@ body {
   padding-bottom: 32px;
 }
 
+.hero-overlay__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-color-main);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-overlay__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .clients__title,
 .team__title,
 .work__title {
@@ -145,6 +162,15 @@ body {
   line-height: 1.18;
   text-align: center;
   color: var(--headlines-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title,
+  .team__title,
+  .work__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .specifics {
@@ -348,27 +374,85 @@ body {
 }
 
 .hero-overlay {
-  max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
-.hero-overlay__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--bg-color-main);
+@media screen and (min-width: 480px) {
+  .hero-overlay {
+    padding: 118px 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-overlay {
+    max-width: 480px;
+    height: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-mobile.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-mobile_@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-overlay {
+    padding: 118px 204px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero-overlay {
+    max-width: 768px;
+    height: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-tablet.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-tablet_@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-overlay {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero-overlay {
+    max-width: 1600px;
+    height: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-desktop.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-desktop_@2x.jpg");
+  }
+}
+
+.conteiner--hero-centered {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-overlay__title--pos {
   max-width: 696px;
   margin-bottom: 30px;
   margin-right: auto;
@@ -414,7 +498,7 @@ body {
   padding-bottom: 25px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -865,14 +949,17 @@ body {
   .callback-modal {
     width: 450px;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 1.5%;
+    transform: translate(-50%) scale(1);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .callback-modal {
     width: 528px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

@@ -6,6 +6,26 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+// ------HERO------
+.hero-overlay__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-color-main);
+
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+
+
 //--------------------------------
 .clients__title,
 .team__title,
@@ -14,7 +34,9 @@
   text-align: center;
   color: var(--headlines-color);
 
-  // @include font(null, 36px, 1.17);
+  @include desktop {
+    @include font(null, 36px, 1.17);
+  }
 }
 
 .specifics {
@@ -24,6 +46,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   @include tablet {
     text-align: start;
   }
@@ -35,6 +58,7 @@
 
   color: #757575;
 }
+
 //------Team section
 .team__name {
   @include font(500, 16px, 1.19);
@@ -50,6 +74,7 @@
 
   margin-bottom: 16px;
 }
+
 //--------Portfolio
 .portfolio__desc {
   @include font(null, 16px, 1.88);
@@ -63,6 +88,7 @@
   line-height: 1.7;
 
   letter-spacing: 0.03em;
+
   @include desktop {
     font-size: 14px;
     line-height: 1.71;

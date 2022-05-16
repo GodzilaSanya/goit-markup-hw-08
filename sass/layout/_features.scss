@@ -1,6 +1,7 @@
 .section-gap--top {
   padding-top: 60px;
   padding-bottom: 60px;
+
   @include desktop {
     padding-top: var(--main-gap);
     padding-bottom: 0;
@@ -9,15 +10,16 @@
 
 .features__list {
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 30px 30px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
     // display: flex;
     // flex-wrap: wrap;
     // margin-bottom: -30px;
     // margin-left: -30px;
   }
+
   @include desktop {
     display: flex;
     flex-wrap: nowrap;
@@ -39,16 +41,22 @@
 }
 
 .features__item {
-  @media screen and (min-width: 480px) and (max-width: 767.98px){
-    &:not(:last-child){
+  // &:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
+
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-   @include desktop {
+
+  @include desktop {
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
+
   // @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   //   margin-bottom: 30px;
   //   margin-left: 30px;
