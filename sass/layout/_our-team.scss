@@ -8,12 +8,13 @@
 
 .team__list {
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px 30px;
-  grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
   }
+
   @include desktop {
     display: flex;
   }
@@ -25,30 +26,27 @@
   // max-width: 450px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
- 
+
   @media screen and (max-width: 767.98px) {
-     &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @include mobile {
-   max-width: 450px;
+    max-width: 450px;
   }
+
   @include tablet {
     // margin-left: 30px;
     // width: calc(100% / 2 - 30px);
   }
+
   @include desktop {
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
-}
-
-.team__pic {
-  display: block;
-  max-width: 100%;
 }
 
 .team__desc {
@@ -63,7 +61,7 @@
   justify-content: center;
 }
 
-.team-social__item + .team-social__item {
+.team-social__item+.team-social__item {
   margin-left: 10px;
 }
 
@@ -77,6 +75,7 @@
   fill: #afb1b8;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: var(--focus-color);
