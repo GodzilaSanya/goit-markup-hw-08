@@ -1,8 +1,12 @@
 .logo {
   display: block;
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0;
+
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
   font-family: $font-logo;
   // @include font(700, 26px, 1.19);
