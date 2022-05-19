@@ -9,10 +9,8 @@
   }
 
   font-family: $font-logo;
-  // @include font(700, 26px, 1.19);
-  @include font(700, 24px, 1.16);
+  @include font(700, 24px, 1.17);
   letter-spacing: 0.03em;
-
 
   color: #000000;
 
@@ -25,5 +23,10 @@
     padding-top: 0;
     padding-bottom: 20px;
     margin-right: 0;
+  }
+
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
