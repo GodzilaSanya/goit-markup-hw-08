@@ -1049,6 +1049,9 @@ body {
 }
 
 .subscribe__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   cursor: pointer;
@@ -1070,10 +1073,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .subscribe__btn {
-    display: flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;
     top: 36px;
     left: 368px;
   }

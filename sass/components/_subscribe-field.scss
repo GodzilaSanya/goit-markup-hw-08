@@ -60,6 +60,9 @@
 }
 
 .subscribe__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
 
@@ -83,10 +86,8 @@
   }
 
   @include desktop {
-    display: flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;
+
     top: 36px;
     left: 368px;
   }
