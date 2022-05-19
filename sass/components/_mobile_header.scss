@@ -2,7 +2,11 @@
     @media screen and (max-width: 767.98px) {
         display: flex;
         align-items: center;
-        justify-content: start;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+
     }
 
     @include tablet {

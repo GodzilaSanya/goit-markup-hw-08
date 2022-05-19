@@ -357,7 +357,9 @@ body {
   .mobile-header {
     display: flex;
     align-items: center;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -472,8 +474,19 @@ body {
 .conteiner--flex-centered {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner--flex-centered {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner--flex-centered {
+    justify-content: space-around;
+  }
 }
 
 .nav-block {

@@ -10,8 +10,15 @@
 .conteiner--flex-centered {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+
+  @include tablet {
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    justify-content: space-around;
+  }
 }
 
 // NAvigation
