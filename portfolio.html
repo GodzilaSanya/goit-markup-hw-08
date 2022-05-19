@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body body-scroll>
     <!-- Header site -->
     <header class="page-header">
       <div class="conteiner conteiner--flex-centered">
@@ -32,6 +32,7 @@
             </svg>
           </button>
           <div class="mobile-header__form" data-header>
+            <!-- <div class="conteiner conteiner--mob-pos"> -->
             <button class="mobile-header__btn-close" type="button" data-header-close>
               <svg width="40px" height="40px">
                 <use href="./images/icon/symbol-defs.svg#icon-close_menu"></use>
@@ -62,6 +63,7 @@
               <li class="mobile-header__social-item"><a class="mobile-header__social-link" href="#">Facebook</a></li>
               <li class="mobile-header__social-item"><a class="mobile-header__social-link" href="#">LinkedIn</a></li>
             </ul>
+            <!-- </div> -->
           </div>
         </div>
         <nav class="nav-block">
@@ -78,7 +80,7 @@
         </nav>
         <ul class="auth-nav">
           <li class="auth-nav__item">
-            <a class="auth-nav__link nav-font-style" href="mailto:info@devstudio.com">
+            <a class="auth-nav__link nav-font-style-auth" href="mailto:info@devstudio.com">
               <svg class="auth-nav__icon" width="16px" height="12px">
                 <use href="./images/icon/symbol-defs.svg#icon-envelope"></use>
               </svg>
@@ -86,7 +88,7 @@
             </a>
           </li>
           <li class="auth-nav__item">
-            <a class="auth-nav__link nav-font-style" href="tel:+380961111111">
+            <a class="auth-nav__link nav-font-style-auth" href="tel:+380961111111">
               <svg class="auth-nav__icon" width="10px" height="16px">
                 <use href="./images/icon/symbol-defs.svg#icon-smartphone"></use>
               </svg>

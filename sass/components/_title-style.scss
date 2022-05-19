@@ -13,8 +13,8 @@
   letter-spacing: 0.02em;
 
   @include tablet {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   @include desktop {
@@ -108,6 +108,16 @@
   @include font(null, 16px, 1.88);
 
   color: var(--second-text-color);
+}
+
+.portfolio__headlines {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: #212121;
 }
 
 // ---------MODAL------
